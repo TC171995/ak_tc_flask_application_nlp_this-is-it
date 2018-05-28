@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown</title>
+</head>
+<body>
+<h1> Select the dependent variable</h1>
+<form method="POST" type="multipart" action="{{url_for("file_attributes_check")}}">
+<select name= colours method="GET" action="/">
+    {% for column_list in column_list %}
+    <option value= "{{column_list}}" SELECTED>{{column_list}}</option>
+    {% endfor %}
+</select>
+
+<input type="number" name="number_of_clusters" min=0>
+
+<input type="checkbox" name="vehicle" value="Bike">I have a bike
+
+<a href="{ url_for(t_sne_output)}">View tsne ouptput</a>
+
+<input type="submit">
+</form>
+
+</select>
+</body>
+</html>

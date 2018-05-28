@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+
+  <!--HTML head tag begins here-->
+  <head>
+
+    <!--Meta tags begin here-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Meta tags end here-->
+
+    <!--CSS connections begin here-->
+    <!--Bootstrap CSS--><link rel='stylesheet', type="text/CSS", href="{{ url_for('static', filename='css/bootstrap.css')}}">
+    <!--CSS connections end here-->
+
+    <!--JavaScript connections begin here-->
+    <!--Bootstrap JavaScript--><script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js')}}"></script>
+    <!--JQuery--><script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+    <!--JavaScript connections end here-->
+
+    <!--HTML page title-->
+    <title>Natural Language Processing Application</title>
+  </head>
+  <!--HTML head tag ends here-->
+
+  <!--HTML body tag begins here-->
+  <body>
+    <!--Jinja tag to make this template reuseable begins here-->
+    {% block body%} {% endblock %}
+     <!--Jinja tag to make this template reuseable ends here-->
+  </body>
+  <!--HTML body tag begins here-->
+
+</html>
